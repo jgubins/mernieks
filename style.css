@@ -1,0 +1,484 @@
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+*{
+  box-sizing: border-box;}
+
+body {
+	margin: 0;
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 30px;
+}
+.row{
+  margin: 0 -15px;
+}
+.col{
+  float:left;
+  padding: 0 15px;
+
+}
+.col-1-3{
+  width:33.333333%;
+}
+.col-1-2{
+	width: 50%;
+}
+.col-1-1{
+	width: 100%;
+}
+
+.light{
+	background-image: url('img/background_light.png');
+}
+.dark{
+	background-image: url('img/background_dark.png');
+}
+
+
+								/*AUGŠĒJĀ HEADER IZVĒLNES DAĻA UN APAKŠĒJĀ STŪRA NAVIGĀCIJAS POGA*/
+
+.header{
+	background-color: #473a2d;
+}
+.header-logo-container {
+float: left;
+margin: 25px 0 10px 0;
+}
+.header-menu-container{
+	float: right;
+}
+.header-chapter-container{
+	float: left;
+	margin-top: 10px;
+	/*border-right: solid white 1px;*/
+}
+.header-language-container{
+	float: right;
+	margin-top: 10px;
+}
+.vertical-header-line{
+	width: 1px;
+	height: 65px;
+	margin-top: 15px;
+	display: inline-block;
+	border-color: white;
+	border-right: none;
+}
+.menu-item {
+	margin: 15px 5px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+}
+.menu-item:hover{
+	background-color: #5b4d3b;
+}
+.fixed-navigation-up{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(191, 179, 153, 0.5);
+	right: 0;
+	bottom: 0;
+	border: 2px solid white;
+	background-attachment: fixed;
+	z-index: 999;
+}
+.fixed-navigation-arrow{
+	width: 80%;
+	margin: 15px 5px;
+}
+
+
+
+
+
+								/*GALVENĀS BILDES DAĻA*/
+
+
+
+
+
+
+.main-picture-container{
+	height: 100%;
+}		
+
+.main-picture{
+	height: 80vh;
+	position: relative;
+	display: block;
+}
+
+.main-picture-image{
+	background-image: url('img/main_picture1.jpg');
+	background-size: cover;
+	background-position: bottom;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	
+}
+.main-picture-title{
+	position: absolute;
+  	bottom: 165px;
+  	left: 185px;
+  	background-color: rgba(0, 0, 0, 0.5);
+  	padding: 15px;
+}
+.main-picture-title h1 {
+	font-size: 44px;
+	font-weight: normal;
+	text-align: center;
+	color: #f5f2eb;
+	margin: 0px;
+}
+.main-picture-description{
+	position: absolute;
+	bottom: 65px;
+	left: 185px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+}
+.main-picture-description p {
+	color: white;
+	font-size: 24px;
+	margin: 0px;
+}
+.main-picture-arrow-left{
+	position: absolute;
+	top: 0;
+	bottom:0;
+	margin: auto 0;
+	margin: auto;
+	background: none;
+	border: none;
+}
+.main-picture-arrow-right{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto 0;
+	background: none;
+	border: none;
+}
+.main-picture-slider-container{
+	/*background-color: white;*/
+	width:57px;
+	height: 30px;
+	position: absolute;
+	bottom: 15px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.main-picture-slider-item{
+	width: 15px;
+	height: 15px;
+	background-color: #cebb89;
+	display: inline-block;
+	border-radius: 50%;
+	border:3px solid;
+	border-color: #cebb89;
+}
+.main-picture-slider-item:hover{
+	background-color: #ffffff;
+	border-color: #cebb89;
+}
+
+
+							/*PAKALPOJUMU, CENU, PAR MUMS, KLIENTI, KONTAKTI - KOPĪGĀS ĪPAŠĪBAS*/
+
+
+.all-sections-title{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+	color: #95782d;
+	text-transform: uppercase;
+	padding: 25px 0;
+	font-weight: normal;
+}
+.under-title-line{
+	 border: 0; 
+	 border-bottom: 1px dashed #63501e;
+	 margin-bottom: 40px;
+}
+
+								/*PAKALPOJUMI*/
+
+
+.service-content-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.service-list-item{
+	position: relative;
+	margin: 20px 0;
+}
+.service-list-item::after{
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: -10px;
+  	width: 15%;
+  	border-bottom: 1px solid #c7c6bf;
+}
+.service-list-item:last-child::after{
+	display: none;
+}
+.service-col-content{
+	overflow: hidden;
+	margin-left: 75px;
+	/*width: 80%;*/
+}
+.service-icons{
+	float: left;
+}
+
+.service-title{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #473a15;
+	margin-top: 0px;
+	font-weight: normal;
+}
+						/*PAKALPOJUMU IZCENOJUMI*/
+
+
+.prices{
+	padding-bottom: 50px;
+}
+.header-service-cell {
+	text-align: left;
+}
+.price-list-table {
+	font-size: 14px;
+	color: #473a15;
+	border-spacing: 0;
+	width: 100%;
+}
+.price-list-table:last-child{
+	border-bottom: 1px solid #dfd9cf;
+}
+.price-table-container td {
+	padding: 10px 0;
+}
+.dark-background{
+	background-color: #f2ebe1;
+}
+
+.header-service-cell, 
+.header-currency-cell{
+	border-bottom: 1px solid #dfd9cf;
+}
+.table-price-cell{
+	font-weight: bold;
+}
+.prices-description-paragraph{
+	font-size: 18px;
+	color: #473a15;
+}
+.prices-continer-footer-comment{
+	color: #473a15;
+	font-size: 14px;
+	font-style: italic;
+}
+.price-table-colspan{
+	font-weight: bold;
+}
+
+
+
+						/*PAR MUMS*/
+
+.about-picture-container{
+	border-radius: 50%;
+	border: solid 5px #97804e;
+	display: inline-block;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	/*margin-bottom: 0;*/
+}
+.certificate-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.certificate-list > li {
+	background: url(img/sertif.png) 0 50% no-repeat;
+	min-height: 3em;
+	padding-left: 40px;
+	max-width: 39%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin: 10px 5px;
+	color: #eadfcd;
+	font-size: 13px;
+}
+.certificate-container{
+	background-color: #624e36;
+}
+.half-section-about{
+	text-align: center;
+}
+.about-person-name{
+	color: #c7a457;
+	font-size: 36px;
+	font-weight: lighter;
+	margin:0 auto;
+}
+.about-us-profile-line{
+	color: #c7a457;
+	width: 350px;
+	border-bottom: none;
+	margin: 10px auto;
+}
+.about-person-contacts{
+	color: #c7a457;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.about-person-description{
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+}
+.about-main-paragraph{
+	color: white;
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: lighter;
+}
+
+
+
+
+							/*KLIENTI*/
+
+.logo-item{
+	display: inline-block;
+	overflow: hidden;
+	height: 70px;
+	margin: 2%;
+}
+.logo-item:hover .client-image{
+	position: relative;
+	top: -70px;
+}
+.client-image{
+
+	display: block;
+}
+.client-block{
+  	margin-left: 15px;
+ 	margin-right: 15px;
+  	text-align: justify;
+}
+.client-block::after{
+  content:'';
+  display:inline-block;
+  vertical-align:top;
+  width:35%;
+}
+
+
+
+
+
+
+								/*FOOTER*/
+
+.footer-logo {
+	display: block;
+	left: 0;
+	right: 0;
+	margin: 0 auto 20px;
+}
+.google-iframe{
+	border:5px solid #97804e;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contact-text-container p{
+	text-align: center;
+	color: #c7a457;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+}
+.contact-text-container{
+	margin-bottom: 100px;
+}
+.contact-text-container p:nth-child(2) {
+	color: #dcbf82;
+	}
+
+.input-name {
+	width: 45%;
+	padding: 10px;
+	background-color: #95782d;
+	border:none;
+	float: left;
+}
+.input-email {
+	padding: 10px;
+	width: 45%;
+	background-color: #95782d;
+	border:none;
+	float: right;
+}
+.input-text{
+	width: 100%;
+	height: 125px;
+	background-color: #95782d;
+	border: none;
+	margin-top: 15px;
+	padding: 5px;
+	resize: none;
+
+}
+.footer-form-title{
+	margin-top: 0;
+	color: #f9e09e;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.submit {
+	background-color: #f9e09e;
+	padding: 10px 25px;
+	margin-top: 10px;
+	border:none;
+}
