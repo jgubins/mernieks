@@ -1,19 +1,26 @@
 .clear:before,
-.clear:after {
+.clear:after,
+.row:before,
+.row:after {
   content: "";
   display: table;
 }
-.clear:after {
+
+.clear:after,
+.row:after {
   clear: both;
 }
 *{
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 body {
 	margin: 0;
-}
-* {
   font-family: 'Open Sans', sans-serif;
+}
+
+input{
+	font-family: inherit;
 }
 .container {
 	width: 1200px;
@@ -94,7 +101,6 @@ margin: 25px 0 10px 0;
 	right: 0;
 	bottom: 0;
 	border: 2px solid white;
-	background-attachment: fixed;
 	z-index: 999;
 }
 .fixed-navigation-arrow{
@@ -160,7 +166,8 @@ margin: 25px 0 10px 0;
 	font-size: 24px;
 	margin: 0px;
 }
-.main-picture-arrow-left{
+.main-picture-arrow-left,
+.main-picture-arrow-right{
 	position: absolute;
 	top: 0;
 	bottom:0;
@@ -169,14 +176,11 @@ margin: 25px 0 10px 0;
 	background: none;
 	border: none;
 }
+.main-picture-arrow-left{
+	left: 0;
+}
 .main-picture-arrow-right{
-	position: absolute;
-	top: 0;
-	bottom: 0;
 	right: 0;
-	margin: auto 0;
-	background: none;
-	border: none;
 }
 .main-picture-slider-container{
 	/*background-color: white;*/
@@ -272,7 +276,7 @@ margin: 25px 0 10px 0;
 .price-list-table {
 	font-size: 14px;
 	color: #473a15;
-	border-spacing: 0;
+	border-collapse: collapse;
 	width: 100%;
 }
 .price-list-table:last-child{
@@ -324,7 +328,7 @@ margin: 25px 0 10px 0;
 	margin: 0;
 	text-align: center;
 }
-.certificate-list > li {
+.certificate-list li {
 	background: url(img/sertif.png) 0 50% no-repeat;
 	min-height: 3em;
 	padding-left: 40px;
@@ -341,6 +345,7 @@ margin: 25px 0 10px 0;
 }
 .half-section-about{
 	text-align: center;
+	margin-bottom: 25px;
 }
 .about-person-name{
 	color: #c7a457;
@@ -358,6 +363,10 @@ margin: 25px 0 10px 0;
 	color: #c7a457;
 	font-size: 18px;
 	margin: 0 auto;
+}
+.about-person-contacts a{
+	color: #c7a457;
+	text-decoration: none;
 }
 .about-person-description{
 	font-size: 16px;
@@ -417,6 +426,7 @@ margin: 25px 0 10px 0;
 }
 .google-iframe{
 	border:5px solid #97804e;
+
 }
 .map-responsive{
     overflow:hidden;
