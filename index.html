@@ -35,9 +35,7 @@
 </header>
 
 <a href="#start">
-	<div class="fixed-navigation-up">
-		<img class="fixed-navigation-arrow" src="img/arrow-top.png">
-	</div>
+	<div class="fixed-navigation-up"></div>
 </a>
 
 													<!-- GALVENĀS BILDES DAĻA -->
@@ -51,12 +49,12 @@
 		
 		<div class="main-picture-title"><h1>Mērniecība</h1></div>
 		<div class="main-picture-description"><p>Zemesgabalu robežu uzmērīšana <br> zemes un būvju reģistrācijai</p></div>
-		<button class="main-picture-arrow-left"><img src="img/arrow_left.png"></button>
-		<button class="main-picture-arrow-right"><img src="img/arrow_right.png"></button>
+		<button class="main-picture-arrow-left"></button>
+		<button class="main-picture-arrow-right"></button>
 		<div class="main-picture-slider-container">
-			<span class="main-picture-slider-item"></span>
-			<span class="main-picture-slider-item"></span>
-			<span class="main-picture-slider-item"></span>
+			<button class="main-picture-slider-item"></button>
+			<button class="main-picture-slider-item"></button>
+			<button class="main-picture-slider-item"></button>
 		</div>
 	</div>
 </main>
@@ -69,12 +67,11 @@
 
 <section class="service light" id="service">
 	<div class="container">
-		<h2 class="all-sections-title">pakalpojumi</h2>
-		<hr class="under-title-line">
+		<h2 class="all-sections-title-for-light">pakalpojumi</h2>
 		<div class="row clear">
 			<div class="col col-1-3">
-				<img class="service-icons" src="img/symb_geo.png">
-				<div class="service-col-content">
+				<!-- <img class="service-icons" src="img/symb_geo.png"> -->
+				<div class="service-col-content geodesy-backgroung-image">
 					<h3 class="service-title">ģeodēzija</h3>
 					<ul class="service-content-list">
 						<li class="service-list-item">Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</li>
@@ -86,8 +83,8 @@
 				</div>
 			</div>
 			<div class="col col-1-3">
-				<img class="service-icons" src="img/symb_mer.png">
-				<div class="service-col-content">
+				<!-- <img class="service-icons" src="img/symb_mer.png"> -->
+				<div class="service-col-content measure-backgroung-image">
 					<h3 class="service-title">mērniecība</h3>
 					<ul class="service-content-list">
 						<li class="service-list-item">Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</li>
@@ -101,8 +98,8 @@
 				</div>
 			</div>
 			<div class="col col-1-3">
-				<img class="service-icons" src="img/symb_zem.png">
-				<div class="service-col-content">
+				<!-- <img class="service-icons" src="img/symb_zem.png"> -->
+				<div class="service-col-content surveying-backgroung-image">
 					<h3 class="service-title">zemes ierīcība</h3>
 							<ul class="service-content-list">
 								<li class="service-list-item">Zemes ierīcības projektu izstrāde;</li>
@@ -116,13 +113,17 @@
 
 
 
+
+
 									<!-- CENAS -->
+
+
+
 
 
 <section class="prices light">
 	<div class="container">
-		<h2 class="all-sections-title">pakalpojumu izcenojumi</h2>
-		<hr class="under-title-line">
+		<h2 class="all-sections-title-for-light">pakalpojumu izcenojumi</h2>
 		<div class="row clear">
 			<div class="col col-1-2">
 				<p class="prices-description-paragraph">
@@ -130,26 +131,30 @@
 				</p>
 				 <div class='price-table-container'>
                     <table class='price-list-table'>
-                      <tr>
-                        <th class='header-service-cell' >Pakalpojums</th>
-                        <th class='header-currency-cell'>EUR</th>
-                      </tr>
-                      <tr class='dark-background'>
-                        <td>pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts</td>
-                        <td class='table-price-cell'>21.34</td>
-                      </tr>
-                      <tr >
-                        <td>pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts</td>
-                        <td class='table-price-cell'>24.19</td>
-                      </tr>
-                      <tr class='dark-background'>
-                        <td>pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts</td>
-                        <td class='table-price-cell'>31.30</td>
-                      </tr>
-                      <tr>
-                        <td>pie objekta platības virs 1.0 ha, papildus par katru nākamo ha,<br>bet ne vairāk kā  135.17 EUR kopā par vienu objektu</td>
-                        <td class='table-price-cell'>10.67</td>
-                      </tr>
+                    	<thead>
+		                     <tr>
+		                       <th class='header-service-cell' >Pakalpojums</th>
+		                       <th class='header-currency-cell'>EUR</th>
+		                     </tr>
+	                    </thead>
+	                   	<tbody>
+		                    <tr class='dark-background'>
+		                      <td>pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts</td>
+		                      <td class='table-price-cell'>21.34</td>
+		                    </tr>
+		                    <tr >
+		                      <td>pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts</td>
+		                      <td class='table-price-cell'>24.19</td>
+		                    </tr>
+		                    <tr class='dark-background'>
+		                      <td>pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts</td>
+		                      <td class='table-price-cell'>31.30</td>
+		                   </tr>
+		                    <tr>
+		                      <td>pie objekta platības virs 1.0 ha, papildus par katru nākamo ha,<br>bet ne vairāk kā  135.17 EUR kopā par vienu objektu</td>
+		                      <td class='table-price-cell'>10.67</td>
+		                    </tr>
+		                </tbody>
                     </table>
                   </div>
                 <p class="prices-continer-footer-comment">
@@ -204,8 +209,7 @@
 
 <section class="about dark" id="about">
 	<div class="container">
-		<h2 class="all-sections-title">par mums</h2>
-		<hr class="under-title-line">
+		<h2 class="all-sections-title-for-dark">par mums</h2>
 		<p class="about-main-paragraph">Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīvi padarīts darbs, lojalitāte pret katru klientu un demokrātiskas cenas kā uzņēmumiem, tā privātpersonām. Darbinieki mērniecības jomā strādā jau kopš 1996. gada, darba pieredze ir uzkrāta strādājot gan valsts iestādēs, gan privātos uzņēmumos, bet 2012. gadā apvienojoties mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA “Ventspils mērnieks”. Šajā īsajā uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā uzticams un profesionāls sadarbības partneris. To pierāda mūsu patstāvīgie klienti un viņu uzticība mūsu darbam.</p>
 		<div class="row clear">
 			<div class="col col-1-2">
@@ -264,9 +268,7 @@
 
 <section class="clients light" id="clients">
 	<div class="container">
-		<h2 class="all-sections-title">klienti</h2>
-		<hr class="under-title-line">
-
+		<h2 class="all-sections-title-for-light">klienti</h2>
 		<div class="client-block">
 			<a class="logo-item" target="_blank" href="#"><img class="client-image" src="temp/sprites/lrzm.png"></a>
 			<a class="logo-item" target="_blank" href="#"><img class="client-image" src="temp/sprites/lvm.png"></a>
@@ -294,8 +296,7 @@
 
 <section class="contacts dark" id="contacts">
 	<div class="container">
-		<h2 class="all-sections-title">kontakti</h2>
-		<hr class="under-title-line">
+		<h2 class="all-sections-title-for-dark">kontakti</h2>
 		<div class="row clear">
 			<div class="col col-1-3">
 				<div class="map-responsive">
