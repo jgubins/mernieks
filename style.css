@@ -108,10 +108,6 @@ margin: 25px 0 10px 0;
 	background-size: 80%;
 	background-position: center;
 }
-/*.fixed-navigation-arrow{
-	width: 80%;
-	margin: 15px 5px;
-}*/
 
 
 
@@ -323,7 +319,6 @@ margin: 25px 0 10px 0;
 .dark-background{
 	background-color: #f2ebe1;
 }
-
 .header-service-cell, 
 .header-currency-cell{
 	border-bottom: 1px solid #dfd9cf;
@@ -431,7 +426,6 @@ margin: 25px 0 10px 0;
 	top: -70px;
 }
 .client-image{
-
 	display: block;
 }
 .client-block{
@@ -463,9 +457,7 @@ margin: 25px 0 10px 0;
 	border:5px solid #97804e;
 	width: 400px;
 	height: 300px;
-
 }
-
 .contact-text-container p{
 	text-align: center;
 	color: #c7a457;
@@ -474,7 +466,6 @@ margin: 25px 0 10px 0;
 	margin: 0;
 	padding: 0;
 }
-
 .contact-text-container{
 	margin-bottom: 100px;
 }
@@ -490,25 +481,38 @@ margin: 25px 0 10px 0;
 .input-name {
 	width: 45%;
 	padding: 10px;
-	background-color: #95782d;
+	background-color: #7f6c42;
 	border:none;
 	float: left;
+	color: #b1965c;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 10px;
+	font-size: 12px;
 }
 .input-email {
 	padding: 10px;
 	width: 45%;
-	background-color: #95782d;
+	background-color: #7f6c42;
 	border:none;
 	float: right;
+	color: #b1965c;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 20px;
+	font-size: 12px;
 }
 .input-text{
 	width: 100%;
 	height: 125px;
-	background-color: #95782d;
+	background-color: #7f6c42;
 	border: none;
 	margin-top: 15px;
 	padding: 5px;
 	resize: none;
+	color: #b1965c;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	padding: 10px;
+
 
 }
 .footer-form-title{
@@ -518,8 +522,11 @@ margin: 25px 0 10px 0;
 	text-transform: uppercase;
 }
 .submit {
-	background-color: #f9e09e;
+	background-color: #b1965c;
 	padding: 10px 25px;
 	margin-top: 10px;
 	border:none;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
 }
