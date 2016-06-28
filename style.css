@@ -188,6 +188,7 @@ margin: 25px 0 10px 0;
 }
 .main-picture-arrow-right{
 	right: 0px;
+	width: 50px;
 	background-image: url("img/arrow_right.png");
 }
 .main-picture-slider-container{
@@ -313,7 +314,11 @@ margin: 25px 0 10px 0;
 	border-bottom: 1px solid #dfd9cf;
 }
 .price-table-container td {
-	padding: 10px 0;
+	padding: 10px 15px;
+}
+.price-table-container th {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .dark-background{
 	background-color: #f2ebe1;
@@ -358,11 +363,11 @@ margin: 25px 0 10px 0;
 	margin: 0;
 	text-align: center;
 }
-.certificate-list li {
+.certificate-list-item {
 	background: url(img/sertif.png) 0 50% no-repeat;
 	min-height: 3em;
 	padding-left: 40px;
-	max-width: 39%;
+	max-width: 38%;
 	display: inline-block;
 	text-align: left;
 	vertical-align: top;
@@ -456,21 +461,11 @@ margin: 25px 0 10px 0;
 }
 .google-iframe{
 	border:5px solid #97804e;
+	width: 400px;
+	height: 300px;
 
 }
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
+
 .contact-text-container p{
 	text-align: center;
 	color: #c7a457;
@@ -479,13 +474,19 @@ margin: 25px 0 10px 0;
 	margin: 0;
 	padding: 0;
 }
+
 .contact-text-container{
 	margin-bottom: 100px;
 }
-.contact-text-container p:nth-child(2) {
+#footer-phone-paragraph,
+.footer-phone-hreff {
 	color: #dcbf82;
+	text-decoration: none;
 	}
-
+.footer-email-href{
+	text-decoration: none;
+	color: inherit;
+}
 .input-name {
 	width: 45%;
 	padding: 10px;
