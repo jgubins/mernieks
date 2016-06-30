@@ -16,7 +16,7 @@
 
 body {
 	margin: 0;
-  font-family: 'Open Sans', sans-serif;
+ 	font-family: 'Open Sans', sans-serif;
 }
 
 input{
@@ -141,12 +141,17 @@ margin: 25px 0 10px 0;
 	bottom: 0;
 	
 }
-.main-picture-title{
+.main-picture-about-container{
+	width: 33%;
 	position: absolute;
-  	bottom: 165px;
-  	left: 185px;
+  	bottom: 115px;
+  	left: 115px;
+}
+.main-picture-title{
+	float: left;
   	background-color: rgba(0, 0, 0, 0.5);
-  	padding: 15px;
+  	padding: 5px 13px;
+  	margin-bottom: 10px;
 }
 .main-picture-title h1 {
 	font-size: 44px;
@@ -156,16 +161,15 @@ margin: 25px 0 10px 0;
 	margin: 0px;
 }
 .main-picture-description{
-	position: absolute;
-	bottom: 65px;
-	left: 185px;
+	float: left;
 	background-color: rgba(0, 0, 0, 0.5);
-	padding: 15px;
+	padding: 8px 13px;
 }
 .main-picture-description p {
 	color: white;
 	font-size: 24px;
 	margin: 0px;
+	line-height: 1.5;
 }
 .main-picture-arrow-left,
 .main-picture-arrow-right{
@@ -180,6 +184,7 @@ margin: 25px 0 10px 0;
 }
 .main-picture-arrow-left{
 	left: 0px;
+	width: 50px;
 	background-image: url("img/arrow_left.png");
 }
 .main-picture-arrow-right{
@@ -187,6 +192,11 @@ margin: 25px 0 10px 0;
 	width: 50px;
 	background-image: url("img/arrow_right.png");
 }
+.main-picture-arrow-left:focus,
+.main-picture-arrow-right:focus{
+	outline: 0;
+}
+
 .main-picture-slider-container{
 	/*background-color: white;*/
 	width:62px;
@@ -316,9 +326,10 @@ margin: 25px 0 10px 0;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.dark-background{
+.price-list-table tr:nth-child(odd) td{
 	background-color: #f2ebe1;
 }
+
 .header-service-cell, 
 .header-currency-cell{
 	border-bottom: 1px solid #dfd9cf;
@@ -340,8 +351,8 @@ margin: 25px 0 10px 0;
 }
 
 
-
 						/*PAR MUMS*/
+
 
 .about-picture-container{
 	border-radius: 50%;
@@ -419,7 +430,7 @@ margin: 25px 0 10px 0;
 	display: inline-block;
 	overflow: hidden;
 	height: 70px;
-	margin: 2%;
+	margin: 20px 11px;
 }
 .logo-item:hover .client-image{
 	position: relative;
@@ -429,9 +440,8 @@ margin: 25px 0 10px 0;
 	display: block;
 }
 .client-block{
-  	margin-left: 15px;
- 	margin-right: 15px;
   	text-align: justify;
+  	margin: 0 -5px;
 }
 .client-block::after{
   content:'';
@@ -439,8 +449,6 @@ margin: 25px 0 10px 0;
   vertical-align:top;
   width:35%;
 }
-
-
 
 
 
@@ -512,6 +520,7 @@ margin: 25px 0 10px 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	padding: 10px;
+	overflow: hidden;
 
 
 }
